@@ -8,14 +8,14 @@ export default function Home() {
   const { data: session, status } = useSession();
   const router = useRouter();
 
-  if (status === "loading") {
-    return <div>Loading...</div>;
-  }
+  // if (status === "loading") {
+  //   return <div>Loading...</div>;
+  // }
 
-  if (status === "unauthenticated") {
-    router.push("/auth/signin");
-    return null;
-  }
+  // if (status === "unauthenticated") {
+  //   router.push("/auth/signin");
+  //   return null;
+  // }
 
   useEffect(() => {
     console.log("Session Data is as ====> ", session);

@@ -145,13 +145,13 @@ export const POST = handler;
 
 // Redurect URI links
 
-// https://yourdomain.com/api/auth/callback/{provider}
-// https://yourdomain.com/api/auth/callback/facebook
-// https://yourdomain.com/api/auth/callback/google
-// https://yourdomain.com/api/auth/callback/instagram
-// https://yourdomain.com/api/auth/callback/linkedin
-// https://yourdomain.com/api/auth/callback/twitter
-// https://yourdomain.com/api/auth/callback/tiktok
+// https://zishan-auth-ap1w.vercel.app/api/auth/callback/{provider}
+// https://zishan-auth-ap1w.vercel.app/api/auth/callback/facebook
+// https://zishan-auth-ap1w.vercel.app/api/auth/callback/google
+// https://zishan-auth-ap1w.vercel.app/api/auth/callback/instagram
+// https://zishan-auth-ap1w.vercel.app/api/auth/callback/linkedin
+// https://zishan-auth-ap1w.vercel.app/api/auth/callback/twitter
+// https://zishan-auth-ap1w.vercel.app/api/auth/callback/tiktok
 
 // Telegram is have diferent
-// https://yourdomain.com/api/auth/telegram
+// https://zishan-auth-ap1w.vercel.app/api/auth/telegram

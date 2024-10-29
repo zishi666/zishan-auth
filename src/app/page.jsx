@@ -1,17 +1,20 @@
 "use client";
 
 import { useSession, signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 export default function Home() {
   const { data: session, status } = useSession();
+  const router = useRouter();
 
   if (status === "loading") {
     return <div>Loading...</div>;
   }
 
   if (status === "unauthenticated") {
-    return <div>Please sign in to view this content</div>;
+    router.push("/auth/signin");
+    return null;
   }
 
   useEffect(() => {

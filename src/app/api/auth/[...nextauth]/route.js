@@ -63,6 +63,16 @@ export const authOptions = {
           scope: "openid profile email",
         },
       },
+
+      // If you want additional profile fields, specify them here
+      profile(profile) {
+        return {
+          id: profile.sub,
+          name: profile.name,
+          email: profile.email,
+          image: profile.picture,
+        };
+      },
     }),
     TwitterProvider({
       clientId: process.env.TWITTER_ID,

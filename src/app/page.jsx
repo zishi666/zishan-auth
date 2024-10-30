@@ -1,6 +1,6 @@
 "use client";
 
-import { useSession, signIn } from "next-auth/react";
+import { useSession, signIn, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
@@ -67,6 +67,7 @@ export default function Home() {
           >
             verify
           </button>
+          <button onClick={() => signOut()}>logout</button>
         </div>
         <div className="flex gap-5 bg-slate-900 w-auto pt-3 pb-3 pl-2 pr-2 rounded-lg">
           <div>Twitter</div>
